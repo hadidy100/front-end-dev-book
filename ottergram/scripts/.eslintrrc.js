@@ -1,9 +1,9 @@
 var DETAIL_IMAGE_SELECTOR = "[data-image-role=target]";
 var DETAIL_TITLE_SELECTOR = "[data-image-role=title]";
 var THUMBNAIL_LINK_SELECTOR = "[data-image-role=trigger]";
-var current = 0;
+var current = 0 //leaving semi colon to show error 
 
-function setDetails(imageUrl, titleText) {
+function setDetails(imageUrl, titleText)
   "use strict";
   var detailImage = document.querySelector(DETAIL_IMAGE_SELECTOR);
   detailImage.setAttribute("src", imageUrl);
@@ -13,7 +13,7 @@ function setDetails(imageUrl, titleText) {
 }
 
 function imageFromThumb(thumbnail) {
-  "use strict";
+  "use strict" //leaving semi colon to show error
   return thumbnail.getAttribute("data-image-url");
 }
 
